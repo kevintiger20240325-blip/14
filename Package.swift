@@ -518,7 +518,8 @@ let package = Package(
         .testTarget(
             name: "ContainerPluginTests",
             dependencies: [
-                "ContainerPlugin"
+                "ContainerPlugin",
+                .product(name: "Logging", package: "swift-log"),
             ]
         ),
         .target(
