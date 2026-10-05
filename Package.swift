@@ -404,6 +404,12 @@ let package = Package(
             ],
             path: "Sources/Services/NetworkVmnet/Server"
         ),
+        .testTarget(
+            name: "ContainerNetworkVmnetServerTests",
+            dependencies: [
+                "ContainerNetworkVmnetServer"
+            ]
+        ),
         .target(
             name: "ContainerRuntimeLinuxClient",
             dependencies: [],
